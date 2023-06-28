@@ -17,6 +17,7 @@ body{
 
 .header {
     grid-column: 2/3;
+    height: 75px;
     background-color: #ffffff;
     display: grid;
     grid-template-columns: 4fr auto auto auto;
