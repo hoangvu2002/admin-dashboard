@@ -65,7 +65,39 @@ body{
 .sidebar {
     grid-column: 1/2;
     grid-row: 1/-1;
+    grid-template-rows: 100px 300px 150px;
+    align-items: start;
     display: grid;
+    background-color: rgb(8, 158, 218);
+    padding: 20px;
+    
+}
+
+.mid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.end {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.sidebar span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo span {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.sidebar > div {
+    height: fit-content;
 }
 
 .logo img {
@@ -243,6 +275,10 @@ body{
     grid-template-rows: 1fr 1fr;
     gap: 5px;
     text-align: left;
+}
+
+.info-text > p:nth-child(1) {
+    font-weight: bold;
 }
 
 .avatar {
