@@ -159,6 +159,7 @@ body{
 
 .announcement > div {
     background-color: #ffffff;
+    padding: 10px;
 }
 
 .announ p:nth-child(1) {
@@ -166,10 +167,30 @@ body{
 }
 
 .announ:not(:last-child) {
-    border-bottom: 1px solid #f3f0f0;
+    border-bottom: 3px solid #f3f0f0;
 }
 
 .announ p {
     font-size: 0.8rem;
     text-align: left;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    text-align: left;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
 }
