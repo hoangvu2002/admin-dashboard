@@ -147,6 +147,7 @@ body{
     padding: 10px 10px;
     border: none;
     border-radius: 10px;
+    transition: 0.1s;
 }
 
 .projects {
@@ -154,6 +155,7 @@ body{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 200px 1fr;
+    padding: 50px;
 }
 
 .your-project > div {
@@ -225,6 +227,7 @@ body{
 .trending {
     grid-column: 2;
     grid-row: 2;
+    margin-top: 50px;
 }
 
 .trend {
@@ -256,4 +259,8 @@ body{
     gap: 10px;
 }
 
+button:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
 
