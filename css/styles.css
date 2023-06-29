@@ -97,8 +97,9 @@ body{
 .nav {
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     height: 100px;
+    background-color: #ffffff;
 }
 
 .hello {
@@ -134,7 +135,18 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    justify-items: center;
     align-items: center;
+}
+
+.nav-links button {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(8, 158, 218);
+    width: 150px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 .projects {
