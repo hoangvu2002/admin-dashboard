@@ -116,6 +116,16 @@ body{
     text-align: left;
 }
 
+.hello-text > p:nth-child(1) {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.hello-text > p:nth-child(2) {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
 .username {
     white-space: nowrap;
 }
@@ -131,6 +141,19 @@ body{
     grid-column: 2;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 200px 1fr;
+}
+
+.your-project > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    gap: 20px
+}
+
+.projects > div > p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .options img {
@@ -163,6 +186,11 @@ body{
     justify-content: end;
 }
 
+.announcement {
+    grid-column: 2;
+    grid-row: 1/2;
+}
+
 .announcement > div {
     background-color: #ffffff;
     padding: 10px;
@@ -180,6 +208,11 @@ body{
 .announ p {
     font-size: 0.8rem;
     text-align: left;
+}
+
+.trending {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .trend {
